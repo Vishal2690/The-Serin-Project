@@ -17,11 +17,11 @@ const Home = () => {
       <div id='home-container'>
         <div className='staticImg-container'>
           <div className='firstStatic'>
-           <p>  <img className='staticImgFirst' src="https://imageio.forbes.com/specials-images/imageserve/637b1d11729a96ce28ea598c/0x0.jpg?format=jpg&width=1200" alt="loading Image" /></p>
+           <p>  <img className='staticImgFirst' src="https://iso.500px.com/wp-content/uploads/2014/12/fineart_cover.jpg" alt="loading Image" /></p>
           </div>
           <div className='secondStatic'>
-            <img className='staticImgsecond' src="https://www.esriuk.com/content/dam/distributor-restricted/esriuk-com/digital-twin/digital-twin-banner-foreground.png" alt="" />
-            <img className='staticImgsecond' src="https://cdn.typestack.ai/images/bc62305b6cff49d43aed5f6550716c89890a3ccc/blog/images/9e0f3adb-19be-4295-9a1a-4b4c86c75c9f.png" alt="" />
+            <img className='staticImgsecond' src="https://thumbs.dreamstime.com/b/spaceman-his-mission-mixed-media-astronaut-holding-earth-planet-palm-elements-image-furnished-nasa-131360957.jpg" alt="" />
+            <img className='staticImgsecond' src="https://st4.depositphotos.com/1000423/22078/i/600/depositphotos_220782354-stock-photo-spaceman-steal-planet-mixed-media.jpg" alt="" />
           </div>
         </div>
         <div className=''>
