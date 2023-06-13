@@ -15,6 +15,7 @@
 .firstStatic {
     margin-top: 30px;
     display   : flex;
+    flex-wrap : wrap;
 }
 
 .staticImgFirst {
@@ -33,7 +34,7 @@
 }
 
 .staticImgsecond {
-    border: 1px solid;
+    border       : 1px solid;
     width        : 330px;
     height       : 200px;
     border-radius: 9px;
@@ -150,7 +151,6 @@
 .home-topPost {
     display       : flex;
     flex-direction: column;
-
 }
 
 .home-topPost h1 {
@@ -229,3 +229,44 @@
 }
 
 
+@media (min-width:280px) and (max-width:700px) {
+    .staticImgFirst {
+        width : 400px;
+        height: 300px;
+    }
+
+    #mainArticles {
+        justify-content: center;
+        align-items    : center;
+    }
+
+    .Article-container {
+        justify-content: center;
+        align-items    : center;
+    }
+    #four-slices {
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+    }
+
+    .staticImgFirst {
+        width : 330px;
+        height: 260px;
+    }
+
+    .showImg {
+        width        : 460px;
+        height       : 270px;
+        border-radius: 10px;
+    }
+    .home-topPost{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+  .down-topPost{
+    flex-direction: column;
+  }
+}

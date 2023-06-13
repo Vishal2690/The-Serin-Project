@@ -17,7 +17,7 @@ const Home = () => {
       <div id='home-container'>
         <div className='staticImg-container'>
           <div className='firstStatic'>
-           <p>  <img className='staticImgFirst' src="https://iso.500px.com/wp-content/uploads/2014/12/fineart_cover.jpg" alt="loading Image" /></p>
+            <img className='staticImgFirst' src="https://iso.500px.com/wp-content/uploads/2014/12/fineart_cover.jpg" alt="loading Image" />
           </div>
           <div className='secondStatic'>
             <img className='staticImgsecond' src="https://thumbs.dreamstime.com/b/spaceman-his-mission-mixed-media-astronaut-holding-earth-planet-palm-elements-image-furnished-nasa-131360957.jpg" alt="" />
