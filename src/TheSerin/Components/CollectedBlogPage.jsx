@@ -2,12 +2,13 @@ import React from 'react'
 import { useLocation} from 'react-router-dom'
 import jarvis from '../Assets/Jarvis.png'
 import twitter from '../Assets/twitter.png'
-import youtube from '../Assets/youbube.png'
+import youtube from '../Assets/youtube.png'
 import facebook from '../Assets/facebook.png'
-import insta from '../Assets/instagram.png'
+import insta from '../Assets/insta.png'
 import claps from '../Assets/claps.svg'
 import share from '../Assets/share.gif'
 import MoreFromSerin from './MoreFromSerin'
+import '../AllCssFile/ComponentFolder.css'
 
 
 const CollectedBlogPage = () => {
@@ -15,7 +16,7 @@ const CollectedBlogPage = () => {
     const item = location.state.item;
 
     return (
-        <>
+        <div className='collectMain'>
             {/*NavBar for CollectedBlogPage */}
             <div className='articleNav'>
                 <div className='Mainhead'>
@@ -84,7 +85,7 @@ const CollectedBlogPage = () => {
                     <p>Share this article</p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

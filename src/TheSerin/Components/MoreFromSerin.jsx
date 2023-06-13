@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import jarvis from '../Assets/Jarvis.png'
 import '../AllCssFile/ComponentFolder.css'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const MoreFromSerin = () => {
     const [blog, setBlog] = useState();
     const [loader, setLoader] = useState(false);
 
+    const nav = useNavigate();
 
     useEffect(() => {
         var url = "https://anotherserin-jsonby-vishal.onrender.com/top-article";
@@ -21,6 +22,9 @@ const MoreFromSerin = () => {
     if (loader) {
         return (
             <>
+                <button className='goBackHome' onClick={() => {
+                   nav (-1)
+                }}>⬅ : GoBack Home</button>
                 <div className='three-slices'>
                     <h2>More From Serin</h2>
                     <div id='morefromserin' >

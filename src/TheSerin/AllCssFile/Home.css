@@ -47,7 +47,7 @@
     justify-content: space-evenly;
     margin-top     : 50px;
     width          : 100vw;
-    
+
 }
 
 .three-container {
@@ -58,7 +58,7 @@
     justify-content: space-evenly;
     height         : 400px;
     gap            : 25px;
-    padding-top: 20px;
+    padding-top    : 20px;
 }
 
 .three-container h2 {
@@ -82,6 +82,17 @@
 }
 
 /* The Articles css */
+.goBackHome {
+    width      : 150px;
+    height     : 30px;
+    margin-left: 20px;
+    border     : none;
+    color      : blue;
+    font-size  : 15px;
+    font-weight: bolder;
+
+
+}
 
 #mainArticles {
     display        : flex;
@@ -110,6 +121,7 @@
     align-items: center;
     gap        : 20px;
 }
+
 
 .four-text {
     display       : flex;
@@ -215,7 +227,6 @@
     width: 40px;
 }
 
-
 @media (min-width:280px) and (max-width:700px) {
     #four-slices {
         flex-direction : column;
@@ -233,23 +244,21 @@
         height       : 270px;
         border-radius: 10px;
     }
+
     .Navbar {
         display: none;
-      }
-    
-      .Navbar.open {
-        display: flex;
-        flex-direction: column;
-        
-      }
     }
     
     .threeLines {
-      display: none;
+        visibility: visible;
     }
     
-    @media (max-width: 700px) {
-      .threeLines {
-        display: block;
-      }
+    
+    .open {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+        height        : 240px;
+    
+    }
 }

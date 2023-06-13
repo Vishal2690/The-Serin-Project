@@ -6,7 +6,8 @@ import nav from '../Assets/NavBar.png'
 const Navbar = () => {
     const [MenuOpen, setMenuOpen] = useState(false);
 
-    const toggleMenu = () => {
+
+    const openMenuFun = () => {
         setMenuOpen(!MenuOpen);
     };
     return (
@@ -16,7 +17,7 @@ const Navbar = () => {
                     <div id='the'>The</div>
                     <h1 className='heading'>Serin</h1>
                 </div>
-                <div className='threeLines' onClick={toggleMenu}>
+                <div className='threeLines' onClick={openMenuFun}>
                     <img src={nav} alt="" />
                 </div>
             </div>

@@ -2,8 +2,8 @@ import React from 'react'
 import LatestArticlesForHomeCompo from './LatestArticlesForHomeCompo'
 import Navbar from '../Router/Navbar'
 import "../AllCssFile/Home.css"
-import youtube from '../Assets/youbube.png'
-import insta from '../Assets/instagram.png'
+import youtube from '../Assets/youtube.png'
+import insta from '../Assets/insta.png'
 import twitter from '../Assets/twitter.png'
 import facebook from '../Assets/facebook.png'
 
