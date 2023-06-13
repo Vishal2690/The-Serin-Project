@@ -1,0 +1,255 @@
+#home-container {
+    display       : flex;
+    flex-direction: column;
+    gap           : 20px;
+}
+
+.staticImg-container {
+    display        : flex;
+    justify-content: center;
+    flex-wrap      : wrap;
+    gap            : 40px;
+    margin-top     : 40px;
+}
+
+.firstStatic {
+    margin-top: 30px;
+    display   : flex;
+}
+
+.staticImgFirst {
+    width        : 600px;
+    height       : 400px;
+    border-radius: 9px;
+}
+
+.secondStatic {
+    margin-top    : 30px;
+    display       : flex;
+    flex-direction: column;
+    gap           : 20px;
+    width         : 200px;
+    height        : 400px;
+}
+
+.staticImgsecond {
+    width        : 200px;
+    height       : 200px;
+    border-radius: 9px;
+}
+
+
+/* The latest page */
+.the-latest-container {
+    display        : flex;
+    flex-wrap      : wrap;
+    flex-direction : row;
+    justify-content: space-evenly;
+    margin-top     : 50px;
+    width          : 100vw;
+    
+}
+
+.three-container {
+    width          : 300px;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: space-evenly;
+    height         : 400px;
+    gap            : 25px;
+    padding-top: 20px;
+}
+
+.three-container h2 {
+    width: 278px;
+}
+
+.three-container h4 {
+    font-size: 13px;
+    width    : 278px;
+}
+
+.three-container p {
+    width: 278px;
+}
+
+
+.latestImg {
+    width        : 280px;
+    height       : 160px;
+    border-radius: 10px;
+}
+
+/* The Articles css */
+
+#mainArticles {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-evenly;
+    margin-top     : 30px;
+    gap            : 30px;
+}
+
+.Article-container {
+    display       : flex;
+    flex-direction: column;
+    gap           : 30px;
+    width         : 700px;
+}
+
+#four-slices img {
+    width        : 200px;
+    height       : 190px;
+    border-radius: 10px;
+}
+
+#four-slices {
+    display    : flex;
+    flex-wrap  : wrap;
+    align-items: center;
+    gap        : 20px;
+}
+
+.four-text {
+    display       : flex;
+    flex-direction: column;
+    width         : 380px;
+    gap           : 10px;
+}
+
+#add img {
+    width        : 380px;
+    border-radius: 10px;
+    height       : 50rem;
+}
+
+.showImg {
+    width        : 44rem;
+    height       : 26rem;
+    border-radius: 10px;
+}
+
+.atext {
+    margin-top: 80px;
+}
+
+.home-topPost {
+    display       : flex;
+    flex-direction: column;
+
+}
+
+.home-topPost h1 {
+    margin-top: 20px;
+}
+
+.toppostImg {
+    width        : 350px;
+    border-radius: 10px;
+    height       : 200px;
+}
+
+.hole-topPost {
+    display       : flex;
+    flex-direction: column;
+    margin-top    : 20px;
+    gap           : 10px;
+}
+
+.down-topPost {
+    display       : flex;
+    align-items   : center;
+    flex-direction: row;
+    gap           : 10px;
+}
+
+.downpostImg {
+    width     : 90px;
+    height    : 100px;
+    margin-top: 20px;
+}
+
+.dotext {
+    display       : flex;
+    flex-direction: column;
+}
+
+.stories-container {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+    width          : 300px;
+    height         : 300px;
+}
+
+.stories-container h2 {
+    font-size: 35px;
+}
+
+.Latest-Stories {
+    margin-top: 90px;
+}
+
+
+.footer {
+    width           : 100vw;
+    height          : 60px;
+    margin-top      : 20px;
+    background-color: rgb(227, 189, 139);
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+
+}
+
+.footer-apps {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    gap            : 20px;
+
+}
+
+.footer-apps img {
+    width: 40px;
+}
+
+
+@media (min-width:280px) and (max-width:700px) {
+    #four-slices {
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+    }
+
+    .staticImgFirst {
+        width : 330px;
+        height: 260px;
+    }
+
+    .showImg {
+        width        : 460px;
+        height       : 270px;
+        border-radius: 10px;
+    }
+    .Navbar {
+        display: none;
+      }
+    
+      .Navbar.open {
+        display: flex;
+        flex-direction: column;
+        
+      }
+    }
+    
+    .threeLines {
+      display: none;
+    }
+    
+    @media (max-width: 700px) {
+      .threeLines {
+        display: block;
+      }
+}
