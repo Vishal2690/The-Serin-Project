@@ -63,7 +63,7 @@ const LeftBlogs = () => {
             }}> ⬇ : Load More</button>
           </div>
           <div className='sibling'>
-            <TopRightBlog  />
+            <TopRightBlog   />
             <DownRightBlogs />
           </div>
         </div >

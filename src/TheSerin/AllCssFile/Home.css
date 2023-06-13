@@ -9,7 +9,7 @@
     justify-content: center;
     flex-wrap      : wrap;
     gap            : 40px;
-    margin-top     : 40px;
+    margin-top     : 10px;
 }
 
 .firstStatic {
@@ -18,8 +18,8 @@
 }
 
 .staticImgFirst {
-    width        : 600px;
-    height       : 400px;
+    width        : 700px;
+    height       : 440px;
     border-radius: 9px;
 }
 
@@ -27,13 +27,14 @@
     margin-top    : 30px;
     display       : flex;
     flex-direction: column;
-    gap           : 20px;
-    width         : 200px;
-    height        : 400px;
+    gap           : 35px;
+    width         : 330px;
+    height        : 440px;
 }
 
 .staticImgsecond {
-    width        : 200px;
+    border: 1px solid;
+    width        : 330px;
     height       : 200px;
     border-radius: 9px;
 }
@@ -227,38 +228,4 @@
     width: 40px;
 }
 
-@media (min-width:280px) and (max-width:700px) {
-    #four-slices {
-        flex-direction : column;
-        justify-content: center;
-        align-items    : center;
-    }
 
-    .staticImgFirst {
-        width : 330px;
-        height: 260px;
-    }
-
-    .showImg {
-        width        : 460px;
-        height       : 270px;
-        border-radius: 10px;
-    }
-
-    .Navbar {
-        display: none;
-    }
-    
-    .threeLines {
-        visibility: visible;
-    }
-    
-    
-    .open {
-        display       : flex;
-        flex-direction: column;
-        align-items   : center;
-        height        : 240px;
-    
-    }
-}
