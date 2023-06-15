@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom';
+import loading from '../Assets/imgLoading.gif'
 
 
 
@@ -22,7 +23,7 @@ const LatestArticlesForHomeCompo = () => {
 
   //Show the extra image onClick
   const showImageFun = () => {
-    setShowImage(true);
+    setShowImage(!showImage);
   }
 
   if (loader) {
@@ -78,12 +79,10 @@ const LatestArticlesForHomeCompo = () => {
                 )
               })
             }
-            {!showImage && (
-              <button className='btn' onClick={showImageFun}>
-                ⬇ : Load More
-              </button>
-            )}
-            {showImage && (<img className='showImg' src={"https://assets-in.bmscdn.com/discovery-catalog/events/et00329656-smxlbspzyc-landscape.jpg"} alt="loading Image" />)}
+            <button className='btn' onClick={showImageFun}>
+              ⬇ : Load More
+            </button>
+            {showImage ? (<img className='showImg' src={"https://assets-in.bmscdn.com/discovery-catalog/events/et00329656-smxlbspzyc-landscape.jpg"} alt="loading Image" />) : null}
           </div>
           <div>
             <div className='home-topPost'>
@@ -159,6 +158,9 @@ const LatestArticlesForHomeCompo = () => {
         </div>
       </>
     )
+  }
+  else {
+    return <img src={loading} alt="" />
   }
 }
 

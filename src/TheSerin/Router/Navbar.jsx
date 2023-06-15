@@ -21,7 +21,7 @@ const Navbar = () => {
                     <img src={nav} alt="" />
                 </div>
             </div>
-            <div className={`Navbar ${MenuOpen ? 'open' : ''}`}>
+            <div className={'Navbar' + (MenuOpen ? ' open' : '')}>
                 <NavLink
                     style={({ isActive }) => { return isActive ? { color: "blue", textDecoration: "none" } : { color: "red", textDecoration: "none" } }}
                     to="/">Home</NavLink>

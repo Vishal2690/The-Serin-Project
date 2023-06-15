@@ -158,16 +158,18 @@
 
 
 /* CollectedBlogPage css" */
-.collectMain{
-    display: flex;
-    flex-direction: column;
+.collectMain {
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 100vw;
+    flex-wrap      : wrap;
+    width          : 100vw;
 }
 
 .articleNav {
+    width           : 100vw;
     height          : 60px;
+    flex-wrap       : wrap;
     display         : flex;
     flex-direction  : row;
     justify-content : space-between;
@@ -181,7 +183,6 @@
     display        : flex;
     justify-content: center;
     align-items    : center;
-    flex-wrap      : wrap;
     font-family    : 'Bebas Neue', cursive;
 }
 
@@ -195,6 +196,7 @@
     transform       : rotateZ(-90deg);
     border-radius   : 2px;
 }
+
 
 .head {
     font-weight   : bolder;
@@ -282,7 +284,7 @@
     flex-wrap      : wrap;
     justify-content: center;
     align-items    : center;
-    gap            : 15px;
+    
 }
 
 .profiletext {
@@ -359,7 +361,8 @@
     margin          : 30px 0px 0px 0px;
     z-index         : 1;
 }
-.moreF{
+
+.moreF {
     width: 100vw;
 }
 
@@ -368,21 +371,21 @@
 }
 
 #morefromserin {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap    : 30px;
-    margin : 20px 0px 0px 0px;
-    height : fit-content;
+    flex-wrap      : wrap;
+    gap            : 30px;
+    margin         : 20px 0px 0px 0px;
+    height         : fit-content;
 }
 
 .containerOfserin {
-    display: flex;
-    flex-direction: column;
+    display        : flex;
+    flex-direction : column;
     justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-    width: 300px;
+    align-items    : center;
+    gap            : 20px;
+    width          : 300px;
 }
 
 .containerOfserin img {
@@ -469,12 +472,17 @@
         align-items    : center;
     }
 
-    #someShareClapIcon{
+    #someShareClapIcon {
         visibility: hidden;
     }
-    .moreF{
+
+    .moreF {
         justify-content: center;
+        align-items    : center;
+    }
+
+    .collectMain {
         align-items: center;
     }
-        
-    }
+
+}

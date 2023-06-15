@@ -5,6 +5,7 @@ import TopRightBlog from './TopRightBlog';
 import DownRightBlogs from './DownRightBlog';
 import Navbar from '../Router/Navbar';
 import loadingimg from '../Assets/imgLoading.gif'
+import AllRounder from '../Assets/AllRounderImg.jpeg'
 
 
 const LeftBlogs = () => {
@@ -20,10 +21,12 @@ const LeftBlogs = () => {
     var url = "https://theserin-projectby-vishal.onrender.com/" + params.category;
 
     let req = new Request(url);
+    
     fetch(req).then((response) => {
       response.json().then((blog) => {
         setBlog(blog);
         setLoder(true);
+        
       })
     })
   }, [params])
@@ -42,7 +45,7 @@ const LeftBlogs = () => {
                   return (
                     <div key={index}>
                       <div className='article'>
-                        <img className='LeftImg' src={item.urlToImage} alt='loading Image' />
+                        <img className='LeftImg' src={item.urlToImage} alt= />
                         <div className='text-headlines'>
                           <NavLink
                             style={(isActive) => { return { color: "orange", textDecoration: "none" } }}

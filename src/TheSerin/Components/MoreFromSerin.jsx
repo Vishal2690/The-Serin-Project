@@ -8,6 +8,7 @@ const MoreFromSerin = () => {
     const [loader, setLoader] = useState(false);
 
     const nav = useNavigate();
+    console.log(nav)
 
     useEffect(() => {
         var url = "https://anotherserin-jsonby-vishal.onrender.com/top-article";

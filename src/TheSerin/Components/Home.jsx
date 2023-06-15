@@ -12,7 +12,7 @@ import facebook from '../Assets/facebook.png'
 const Home = () => {
 
   return (
-    <>
+    <div className='All'>
       <Navbar />
       <div id='home-container'>
         <div className='staticImg-container'>
@@ -24,7 +24,7 @@ const Home = () => {
             <img className='staticImgsecond' src="https://st4.depositphotos.com/1000423/22078/i/600/depositphotos_220782354-stock-photo-spaceman-steal-planet-mixed-media.jpg" alt="" />
           </div>
         </div>
-        <div className=''>
+        <div className='latestArticleCop'>
           <LatestArticlesForHomeCompo />
         </div>
         <footer className='footer'>
@@ -36,7 +36,7 @@ const Home = () => {
           </span>
         </footer>
       </div>
-    </>
+    </div>
   )
 
 }

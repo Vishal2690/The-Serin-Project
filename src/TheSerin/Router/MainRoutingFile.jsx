@@ -10,7 +10,7 @@ import LatestArticlesForHomeCompo from '../Components/LatestArticlesForHomeCompo
 
 
 
-const MainRoutingFile = ({item}) => {
+const MainRoutingFile = () => {
 
     return (
         <>
