@@ -45,7 +45,7 @@ const LeftBlogs = () => {
                   return (
                     <div key={index}>
                       <div className='article'>
-                        <img className='LeftImg' src={item.urlToImage} alt= />
+                        <img className='LeftImg' src={item.urlToImage} alt={AllRounder} />
                         <div className='text-headlines'>
                           <NavLink
                             style={(isActive) => { return { color: "orange", textDecoration: "none" } }}
