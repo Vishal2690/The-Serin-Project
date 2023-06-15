@@ -21,12 +21,12 @@ const LeftBlogs = () => {
     var url = "https://theserin-projectby-vishal.onrender.com/" + params.category;
 
     let req = new Request(url);
-    
+
     fetch(req).then((response) => {
       response.json().then((blog) => {
         setBlog(blog);
         setLoder(true);
-        
+
       })
     })
   }, [params])
@@ -44,19 +44,21 @@ const LeftBlogs = () => {
                 if (index < disply) {
                   return (
                     <div key={index}>
-                      <div className='article'>
-                        <img className='LeftImg' src={item.urlToImage} alt={AllRounder} />
-                        <div className='text-headlines'>
-                          <NavLink
-                            style={(isActive) => { return { color: "orange", textDecoration: "none" } }}
-                            to={"/category/" + index}
-                            state={{ item }}>
-                            <p className='title'>{item.title}</p>
-                          </NavLink>
-                          <p className='content'>{item.content.slice(0, 90)}</p>
-                          <p className='published'>{item.publishedAt}</p>
+                      {item.urlToImage && (
+                        <div className='article'>
+                          <img className='LeftImg' src={item.urlToImage} alt={`item: ${item.urlToImage}`} />
+                          <div className='text-headlines'>
+                            <NavLink
+                              style={(isActive) => { return { color: "orange", textDecoration: "none" } }}
+                              to={"/category/" + index}
+                              state={{ item }}>
+                              <p className='title'>{item.title}</p>
+                            </NavLink>
+                            <p className='content'>{item.content.slice(0, 90)}</p>
+                            <p className='published'>{item.publishedAt}</p>
+                          </div>
                         </div>
-                      </div>
+                      )}
                     </div>
                   )
                 }
@@ -66,7 +68,7 @@ const LeftBlogs = () => {
             }}> ⬇ : Load More</button>
           </div>
           <div className='sibling'>
-            <TopRightBlog   />
+            <TopRightBlog />
             <DownRightBlogs />
           </div>
         </div >

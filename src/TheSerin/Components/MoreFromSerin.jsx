@@ -25,7 +25,7 @@ const MoreFromSerin = () => {
         return (
             <>
                 <button className='goBackHome' onClick={() => {
-                   nav (-1)
+                    nav(-1)
                 }}>⬅ : GoBack Home</button>
                 <div className='three-slices'>
                     <h2>More From Serin</h2>
@@ -33,21 +33,25 @@ const MoreFromSerin = () => {
                         {
                             blog.slice(81, 89).map((item, index) => {
                                 return (
-                                    <div className='containerOfserin' key={index}>
-                                        <img src={item.urlToImage} alt={AllRounder} />
-                                        <NavLink
-                                            style={(isActive) => { return { color: "orange", textDecoration: "none" } }}
-                                            to={"/category/" + index}
-                                            state={{ item }}>
-                                            <p className='title'>{item.title}</p>
-                                        </NavLink>
-                                        <div className='profile2'>
-                                            <img src={jarvis} alt="" />
-                                            <span className='profiletext'>
-                                                <p>{item.author}</p>
-                                                <p id='makesmall'>Jan 28, 2019 · 10 min read</p>
-                                            </span>
-                                        </div>
+                                    <div>
+                                        {item.urlToImage && (
+                                            <div className='containerOfserin' key={index}>
+                                                <img src={item.urlToImage} alt={`item: ${item.urlToImage}`} />
+                                                <NavLink
+                                                    style={(isActive) => { return { color: "orange", textDecoration: "none" } }}
+                                                    to={"/category/" + index}
+                                                    state={{ item }}>
+                                                    <p className='title'>{item.title}</p>
+                                                </NavLink>
+                                                <div className='profile2'>
+                                                    <img src={jarvis} alt="" />
+                                                    <span className='profiletext'>
+                                                        <p>{item.author}</p>
+                                                        <p id='makesmall'>Jan 28, 2019 · 10 min read</p>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        )}
                                     </div>
                                 )
                             })

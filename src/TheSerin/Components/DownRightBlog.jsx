@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {NavLink, useParams } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import '../AllCssFile/ComponentFolder.css'
 import loadingimg from '../Assets/imgLoading.gif'
 import AllRounder from '../Assets/AllRounderImg.jpeg'
@@ -27,20 +27,24 @@ const DownRightBlogs = () => {
                     blog.map((item, index) => {
                         if (index > 95) {
                             return (
-                                <div className='DownRightarticle' key={index}>
-                                    <img
-                                        className='DownRightImg'
-                                        src={item.urlToImage}
-                                        alt={AllRounder} />
-                                    <div className='Downright-headlines'>
-                                        <NavLink
-                                            style={(isActive) => { return { color: "orange", textDecoration: "none" } }}
-                                            to={"/category/" + index}
-                                            state={{ item }}>
-                                            <p className='title'>{item.title.slice(0, 40)}</p>
-                                        </NavLink>
-                                        <p className='publishedAt'>{item.publishedAt}</p>
-                                    </div>
+                                <div>
+                                    {item.urlToImage && (
+                                        <div className='DownRightarticle' key={index}>
+                                            <img
+                                                className='DownRightImg'
+                                                src={item.urlToImage}
+                                                alt={`item: ${item.urlToImage}`} />
+                                            <div className='Downright-headlines'>
+                                                <NavLink
+                                                    style={(isActive) => { return { color: "orange", textDecoration: "none" } }}
+                                                    to={"/category/" + index}
+                                                    state={{ item }}>
+                                                    <p className='title'>{item.title.slice(0, 40)}</p>
+                                                </NavLink>
+                                                <p className='publishedAt'>{item.publishedAt}</p>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                             )
                         }
