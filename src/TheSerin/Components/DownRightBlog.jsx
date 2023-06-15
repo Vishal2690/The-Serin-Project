@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {NavLink, useParams } from 'react-router-dom';
 import '../AllCssFile/ComponentFolder.css'
 import loadingimg from '../Assets/imgLoading.gif'
+import AllRounder from '../Assets/AllRounderImg.jpeg'
 
 const DownRightBlogs = () => {
     const [blog, setBlog] = useState();
@@ -30,7 +31,7 @@ const DownRightBlogs = () => {
                                     <img
                                         className='DownRightImg'
                                         src={item.urlToImage}
-                                        alt="Image Loading" />
+                                        alt={AllRounder} />
                                     <div className='Downright-headlines'>
                                         <NavLink
                                             style={(isActive) => { return { color: "orange", textDecoration: "none" } }}

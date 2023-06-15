@@ -9,6 +9,7 @@ import claps from '../Assets/claps.svg'
 import share from '../Assets/share.gif'
 import MoreFromSerin from './MoreFromSerin'
 import '../AllCssFile/ComponentFolder.css'
+import AllRounder from '../Assets/AllRounderImg.jpeg'
 
 
 const CollectedBlogPage = () => {
@@ -45,7 +46,7 @@ const CollectedBlogPage = () => {
                             <img src={youtube} />
                         </span>
                     </div>
-                    <img className='InsideImg' src={item.urlToImage} alt="" />
+                    <img className='InsideImg' src={item.urlToImage} alt={AllRounder} />
                     <div className='double'>
                         <p className='Insidecontent'>{item.content}</p>
                         <p className='Insidedescrip'>{item.description}</p>

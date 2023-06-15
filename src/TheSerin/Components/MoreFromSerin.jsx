@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import jarvis from '../Assets/Jarvis.png'
 import '../AllCssFile/ComponentFolder.css'
 import { NavLink, useNavigate } from 'react-router-dom';
+import AllRounder from '../Assets/AllRounderImg.jpeg'
 
 const MoreFromSerin = () => {
     const [blog, setBlog] = useState();
@@ -33,7 +34,7 @@ const MoreFromSerin = () => {
                             blog.slice(81, 89).map((item, index) => {
                                 return (
                                     <div className='containerOfserin' key={index}>
-                                        <img src={item.urlToImage} alt="" />
+                                        <img src={item.urlToImage} alt={AllRounder} />
                                         <NavLink
                                             style={(isActive) => { return { color: "orange", textDecoration: "none" } }}
                                             to={"/category/" + index}

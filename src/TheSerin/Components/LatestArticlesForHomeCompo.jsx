@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import loading from '../Assets/imgLoading.gif'
+import AllRounder from '../Assets/AllRounderImg.jpeg'
 
 
 
@@ -37,7 +38,7 @@ const LatestArticlesForHomeCompo = () => {
                 return (
                   <div key={index}>
                     <div className='three-container'>
-                      <img className='latestImg' src={item.urlToImage} alt="" />
+                      <img className='latestImg' src={item.urlToImage} alt={AllRounder} />
                       <NavLink
                         style={(isActive) => { return { color: "orange", textDecoration: "none" } }}
                         to={"/category/" + index}
@@ -62,7 +63,7 @@ const LatestArticlesForHomeCompo = () => {
                 return (
                   <div key={index}>
                     <div id='four-slices'>
-                      <img src={item.urlToImage} alt="" />
+                      <img src={item.urlToImage} alt={AllRounder} />
                       <div className='four-text'>
                         <NavLink
                           style={(isActive) => { return { color: "orange", textDecoration: "none" } }}
@@ -94,7 +95,7 @@ const LatestArticlesForHomeCompo = () => {
                 blog.slice(66, 67).map((item, index) => {
                   return (
                     <div key={index} className='hole-topPost'>
-                      <img className='toppostImg' src={item.urlToImage} alt="" />
+                      <img className='toppostImg' src={item.urlToImage} alt={AllRounder} />
                       <NavLink
                         style={(isActive) => { return { color: "orange", textDecoration: "none" } }}
                         to={"/category/" + index}
@@ -113,7 +114,7 @@ const LatestArticlesForHomeCompo = () => {
                 blog.slice(67, 70).map((item, index) => {
                   return (
                     <div key={index} className='down-topPost'>
-                      <img className='downpostImg' src={item.urlToImage} alt="" />
+                      <img className='downpostImg' src={item.urlToImage} alt={AllRounder} />
                       <div className='dotext'>
                         <NavLink
                           style={(isActive) => { return { color: "orange", textDecoration: "none" } }}
