@@ -163,11 +163,11 @@
     flex-direction : column;
     justify-content: center;
     flex-wrap      : wrap;
-    width          : 100vw;
+    /* width          : 100vw; */
 }
 
 .articleNav {
-    width           : 100vw;
+    /* width           : 100vw; */
     height          : 60px;
     flex-wrap       : wrap;
     display         : flex;
@@ -362,9 +362,6 @@
     z-index         : 1;
 }
 
-.moreF {
-    width: 100vw;
-}
 
 .three-slices h2 {
     margin-top: 10px;

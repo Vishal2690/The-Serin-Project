@@ -18,7 +18,7 @@ const CollectedBlogPage = () => {
 
 
     return (
-        <div>
+        <div className='CollectAll'>
             {/*NavBar for CollectedBlogPage */}
             <div className='articleNav'>
                 <div className='Mainhead'>
